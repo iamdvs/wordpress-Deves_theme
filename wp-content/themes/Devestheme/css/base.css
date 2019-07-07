@@ -33,7 +33,7 @@
  * ------------------------------------------------------------------- */
 @import url("fonts.css");
 
-a,p,cite,ul,li,h3,time,input{
+a,p,cite,ul,li,h3,time,input,span{
    font-family: vazir !important;
 }
 /* ===================================================================

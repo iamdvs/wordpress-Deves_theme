@@ -122,7 +122,7 @@ a:hover, a:active {
  * # typography & general theme styles
  * 
  * ------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 ,span{
    font-family: vazir;
    color: #000000;
    font-style: normal;
@@ -728,7 +728,7 @@ select {
 }
 
 textarea {
-   min-height: 25rem;
+   min-height: 15rem;
 }
 
 input[type="email"]:focus,
@@ -2889,7 +2889,7 @@ html.no-csstransitions .featured {
 }
 
 .s-content--narrow .row {
-   max-width: 960px;
+   max-width: 1100px;
 }
 
 .s-content__header {
@@ -3614,7 +3614,7 @@ footer h4::after {
  * ## content main
  * ------------------------------------------------------------------- */
 .s-content__main {
-   margin-top: 6rem;
+   margin-top: 2rem;
    padding-left: 6rem;
    padding-right: 6rem;
 }
@@ -3646,8 +3646,7 @@ footer h4::after {
  * ## post tags
  * ------------------------------------------------------------------- */
 .s-content__tags {
-   margin-top: 6rem;
-   font-family: "metropolis-regular", sans-serif;
+   font-family: "vazir", sans-serif;
 }
 
 .s-content__tags span {
@@ -3710,7 +3709,7 @@ footer h4::after {
  * ------------------------------------------------------------------- */
 .s-content__author {
    margin-top: 10.2rem;
-   padding-left: 9rem;
+   padding-left: 8rem;
    position: relative;
 }
 
@@ -3760,7 +3759,7 @@ footer h4::after {
  * ## blog single page navigation
  * ------------------------------------------------------------------- */
 .s-content__pagenav {
-   margin-top: 10.2rem;
+   margin-top: 5rem;
    padding-top: 1.8rem;
    border-top: 1px solid rgba(0, 0, 0, 0.1);
    position: relative;
@@ -3786,9 +3785,9 @@ footer h4::after {
 
 .s-content__nav a {
    font-family: "librebaskerville-bold", serif;
-   font-size: 2.2rem;
+   font-size: 1.8rem;
    line-height: 1.5;
-   color: #19191b;
+   color: rgb(204, 204, 204);
 }
 
 .s-content__nav a:hover span, .s-content__nav a:focus span {
@@ -3801,6 +3800,9 @@ footer h4::after {
    padding-right: 2rem;
 }
 
+.s-content__next div{
+   color: #f5f5f5 !important;
+}
 
 /* -------------------------------------------------------------------
  * ## format gallery
@@ -4056,6 +4058,17 @@ footer h4::after {
 
 .comment__meta .reply {
    font-family: "metropolis-semibold", sans-serif;
+   margin-right: auto;
+}
+.comment-reply-link{
+   margin-top: 20px !important;
+}
+comment__text p{
+      display: block;
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
 }
 
 .comment__text {

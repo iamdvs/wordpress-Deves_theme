@@ -38,3 +38,65 @@ function my_menus() {
   add_action( 'init', 'my_menus' );
 
  ?>
+
+
+
+<!-- comments  -->
+<?php
+
+    function advanced_comment($comment, $args, $depth) {
+       $GLOBALS['comment'] = $comment; ?>
+
+
+
+          <!-- commentlist -->
+          <ol class="commentlist">
+
+                
+<li class="depth-1 comment">
+
+<div class="comment__avatar">
+    <?php echo get_avatar( $comment, 100 ); ?>
+
+</div>
+
+<div class="comment__content">
+
+    <div class="comment__info">
+        <cite><?php echo get_comment_author_link();  ?></cite>
+
+        <div class="comment__meta">
+            <time class="comment__time"> <?php printf(__('%1$s'), get_comment_date('j F Y در g:i a'), get_comment_time()) ?></time>
+            <p><?php comment_text(); ?>
+
+        </div>
+    </div>
+
+    <div class="comment__text m-0">
+    <?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+    </p>
+
+
+    <?php if ($comment->comment_approved == '0') : ?>
+         <p>
+              <em>دیدگاه شما منتظر تایید مدیریت است.</em><br />
+      </p>
+     <?php endif; ?>
+
+
+
+  </p>
+    </div>
+
+</div>
+
+</li>
+
+</ol> <!-- end commentlist -->
+
+
+
+
+
+
+<?php } ?>

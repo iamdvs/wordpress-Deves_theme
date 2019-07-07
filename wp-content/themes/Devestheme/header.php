@@ -37,7 +37,7 @@
 
     <!-- pageheader
     ================================================== -->
-    <section class="s-pageheader s-pageheader--home">
+    <section class=" s-pageheader--home">
 
         <header class="header">
             <div class="header__content row">
