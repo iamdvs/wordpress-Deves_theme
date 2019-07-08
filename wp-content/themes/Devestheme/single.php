@@ -113,9 +113,6 @@
         <div id="comments" class="row">
             <div class="col-full">
 
-                <h3 class="h2">5 کامنت</h3>
-
-    
                 <!-- respond
                 ================================================== -->
                 <div class="respond">

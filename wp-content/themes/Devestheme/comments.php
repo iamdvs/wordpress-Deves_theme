@@ -31,8 +31,10 @@ if ( post_password_required() )
   'cancel_reply_link' => __( 'لغو پاسخ' ),
   'label_submit'      => __( 'Post Comment' ),
 
-  'comment_field' =>  ' <div class="form-group">
-  <textarea id="comment" placeholder="متن دیدگاه" class="form-control w-100" name="comment"  cols="30" rows="9" aria-required="true"></textarea>'.'</div>',
+  'comment_field' =>  ' 
+  <div class="message form-field">
+  <textarea name="comment" id="comment" class="full-width" placeholder="متن دیدگاه" aria-required="true"></textarea>
+</div>',
 
   'must_log_in' => 'You Should login to send comment',
 
@@ -50,9 +52,13 @@ if ( post_password_required() )
 
   'fields' => apply_filters( 'comment_form_default_fields', array(
 
-    'author' =>'<input class="form-control" id="author" placeholder="نام" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .'"/>',
+    'author' =>'  <div class="form-field">
+    <input name="author" type="text" id="cName" class="full-width" placeholder="نام" value="' . esc_attr( $commenter['comment_author'] ) .'">
+</div>',
 
-    'email' =>'<input class="form-control mt-4" id="email" name="email" placeholder="ایمیل" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .'" size="30"/>'    )
+    'email' =>'     <div class="form-field">
+    <input name="email" type="text" id="cEmail" class="full-width" placeholder="ایمیل شما" value="' . esc_attr(  $commenter['comment_author_email'] ) .'">
+</div>'    )
   
 ),
 );

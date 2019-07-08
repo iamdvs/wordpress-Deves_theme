@@ -37,7 +37,7 @@
 
     <!-- pageheader
     ================================================== -->
-    <section class=" s-pageheader--home">
+    <section class="marginb-200">
 
         <header class="header">
             <div class="header__content row">

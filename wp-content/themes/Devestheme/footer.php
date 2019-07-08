@@ -42,11 +42,11 @@
 
                     <ul class="s-footer__linklist">
                         <li><a href="#0">Facebook</a></li>
-                        <li><a href="#0">Instagram</a></li>
+                        <li><a href="https://instagram.com/iam_deves">Instagram</a></li>
                         <li><a href="#0">Twitter</a></li>
                         <li><a href="#0">Pinterest</a></li>
                         <li><a href="#0">Google+</a></li>
-                        <li><a href="#0">LinkedIn</a></li>
+                        <li><a href="https://www.linkedin.com/in/deves-53743b148">LinkedIn</a></li>
                     </ul>
 
                 </div> <!-- end s-footer__social -->
