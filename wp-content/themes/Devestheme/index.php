@@ -61,6 +61,7 @@
 
                 <?php endwhile; ?>
             <!-- end of the loop -->
+            <?php wp_reset_postdata(); ?>
 
 
             <!-- pagination here -->
@@ -85,7 +86,6 @@
                 </nav>
             </div>
         </div>
-        <?php wp_reset_postdata(); ?>
 
     </section> <!-- s-content -->
     <?php else : ?>

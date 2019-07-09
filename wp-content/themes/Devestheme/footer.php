@@ -26,12 +26,7 @@
                     <h4>ارشیو</h4>
 
                     <ul class="s-footer__linklist">
-                        <li><a href="#0">مهر ۱۳۹۴</a></li>
-                        <li><a href="#0">اذر ۱۳۹۸</a></li>
-                        <li><a href="#0">دی ۱۳۹۵</a></li>
-                        <li><a href="#0">بهمن ۱۳۹۵</a></li>
-                        <li><a href="#0">اسفند ۱۳۹۳</a></li>
-                        <li><a href="#0">شهریور ۱۳۹۱</a></li>
+                    <?php wp_nav_menu( array( 'theme_location' => 'footer-menu')); ?>
                     </ul>
 
                 </div> <!-- end s-footer__archives -->
@@ -56,8 +51,7 @@
                     <h4>دیگر چیز ها</h4>
 
                     <p>
-این پست بسیار استاندارد میباشد و از نظر ما هیچ نقضی در ان وجود ندارد که ما بخواهیم ان را انکار کنیم
-                    </p>
+برای اخبار جدید  ایمیلتان را وارد کنید                    </p>
 
                     <div class="subscribe-form">
                         <form id="mc-form" class="group" novalidate="true">

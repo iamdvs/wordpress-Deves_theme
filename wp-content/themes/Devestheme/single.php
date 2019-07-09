@@ -23,19 +23,18 @@
                 <li class="date"> <?php the_time('j F Y'); ?></li>
                 <li class="cat">
                     دسته
-                    <a href="#0">زندگی</a>
-                    <a href="#0">چرخه حیات</a>
+                    <a href="#0"> <?php the_category(','); ?> </a>
+
                 </li>
             </ul>
         </div> <!-- end s-content__header -->
 
         <div class="s-content__media col-full">
             <div class="s-content__post-thumb">
-                <img src="images/thumbs/single/standard/standard-1000.jpg" 
-                     srcset="images/thumbs/single/standard/standard-2000.jpg 2000w, 
-                             images/thumbs/single/standard/standard-1000.jpg 1000w, 
-                             images/thumbs/single/standard/standard-500.jpg 500w" 
-                     sizes="(max-width: 2000px) 100vw, 2000px" alt="" >
+            <a href="#0" class="">            <?php echo get_avatar( get_the_author_meta('user_email'),'50',''); ?>
+ <?php the_author(); ?></a>
+
+
             </div>
         </div> <!-- end s-content__media -->
 

@@ -25,7 +25,7 @@ if ( post_password_required() )
   $args = array(
   'id_form'           => 'commentform',
   'id_submit'         => 'submit',
-  'class_submit'         => 'btn btn-success has_icon',
+  'class_submit'         => 'submit btn--white btn--large full-width',
   'title_reply'       => __( '' ),
   'title_reply_to'    => __( 'ارسال پاسخ به %s' ),
   'cancel_reply_link' => __( 'لغو پاسخ' ),
