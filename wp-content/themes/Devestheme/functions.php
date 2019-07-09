@@ -41,7 +41,6 @@ function my_menus() {
 
 
 
-<!-- comments  -->
 <?php
 
     function advanced_comment($comment, $args, $depth) {
@@ -49,7 +48,6 @@ function my_menus() {
 
 
 
-          <!-- commentlist -->
           <ol class="commentlist">
 
                 
@@ -92,7 +90,7 @@ function my_menus() {
 
 </li>
 
-</ol> <!-- end commentlist -->
+</ol>
 
 
 
