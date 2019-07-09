@@ -11,12 +11,8 @@
                     <h4>لینک سریع</h4>
 
                     <ul class="s-footer__linklist">
-                        <li><a href="#0">خانه</a></li>
-                        <li><a href="#0">وبلاگ</a></li>
-                        <li><a href="#0">استایل</a></li>
-                        <li><a href="#0">درباره</a></li>
-                        <li><a href="#0">ارتباط با من</a></li>
-                        <li><a href="#0">قوانین</a></li>
+                    <?php wp_nav_menu( array( 'theme_location' => 'footer-menu')); ?>
+
                     </ul>
 
                 </div> <!-- end s-footer__sitelinks -->
@@ -26,7 +22,6 @@
                     <h4>ارشیو</h4>
 
                     <ul class="s-footer__linklist">
-                    <?php wp_nav_menu( array( 'theme_location' => 'footer-menu')); ?>
                     </ul>
 
                 </div> <!-- end s-footer__archives -->

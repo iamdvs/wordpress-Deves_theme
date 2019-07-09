@@ -63,23 +63,7 @@
                     </li>
                 </ul> <!-- end header__social -->
 
-                <a class="header__search-trigger" href="#0"></a>
-
-                <div class="header__search">
-
-                    <form role="search" method="get" class="header__search-form" action="#">
-                        <label>
-                            <span class="hide-content">جستجو برای  :</span>
-                            <input type="search" class="search-field" placeholder="جستجو" value="" name="s" title="جستجو برای:" autocomplete="off">
-                        </label>
-                        <input type="submit" class="search-submit" value="جستجو">
-                    </form>
-        
-                    <a href="#0" title="Close Search" class="header__overlay-close">بستن</a>
-
-                </div>  <!-- end header__search -->
-
-
+           <?php get_search_form(); ?>
                 <a class="header__toggle-menu" href="#0" title="Menu"><span>منو</span></a>
 
                 <nav class="header__nav-wrap">

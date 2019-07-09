@@ -85,13 +85,13 @@ html, body {
 }
 
 body {
-   background: #19191b;
+   background: #424242;
    font-family: "metropolis-regular", sans-serif;
    font-size: 1.6rem;
    font-style: normal;
    font-weight: normal;
    line-height: 1.875;
-   color: #656565;
+   color: #8d8d8d;
    margin: 0;
    padding: 0;
 }
@@ -122,14 +122,16 @@ a:hover, a:active {
  * # typography & general theme styles
  * 
  * ------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 ,span{
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 ,span,textarea{
    font-family: vazir;
-   color: #000000;
+   color: #bdbdbd;
    font-style: normal;
    font-weight: normal;
    text-rendering: optimizeLegibility;
 }
-
+em{
+   color: green;
+}
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
    margin-top: 6rem;
    margin-bottom: 1.8rem;
@@ -504,7 +506,7 @@ dl,
 form,
 .video-container,
 .cl-custom-select {
-   margin-bottom: 3rem;
+   margin-bottom: .5rem;
 }
 
 
@@ -1878,7 +1880,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .header__search {
    display: block;
    text-align: center;
-   background: #151515;
+   background: #494949;
    opacity: 0;
    visibility: hidden;
    position: fixed;
@@ -1916,7 +1918,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .header__search-form input[type="search"] {
    background-color: transparent;
-   color: #000000;
+   color: #f5f5f5;
    height: auto;
    width: 100%;
    font-family: "metropolis-semibold", sans-serif;
@@ -2880,8 +2882,8 @@ html.no-csstransitions .featured {
  *
  * ------------------------------------------------------------------- */
 .s-content {
-   background-color:#19191B;
-   padding-top: 20rem;
+   background-color:#424242 !important;
+   padding-top: 25rem;
    padding-bottom: 7.2rem;
 
 }
@@ -2907,7 +2909,7 @@ html.no-csstransitions .featured {
 }
 
 .s-content__header .lead {
-   color: rgba(0, 0, 0, 0.5);
+   color: #494949;
 }
 
 /* ------------------------------------------------------------------- 
@@ -3761,8 +3763,8 @@ footer h4::after {
  * ## blog single page navigation
  * ------------------------------------------------------------------- */
 .s-content__pagenav {
-   margin-top: 5rem;
-   padding-top: 1.8rem;
+   margin-top: 2rem;
+   padding-top: 1rem;
    border-top: 1px solid rgba(0, 0, 0, 0.1);
    position: relative;
 }
@@ -3985,8 +3987,7 @@ footer h4::after {
  * ## comments 
  * ------------------------------------------------------------------- */
 .comments-wrap {
-   border-top: 1px solid #f5f5f5 ;
-   background-color: #19191B;
+   background-color: #494949;
    padding: 0rem 0 0rem;
    margin-top: 2rem;
 }
@@ -3995,7 +3996,7 @@ footer h4::after {
  * -------------------------------------------------- */
 #comments {
    padding-top: 1.2rem;
-   padding-bottom: 1.2rem;
+   padding-bottom: 10rem;
    max-width: 880px;
    color: #4c4c4c;
 }
@@ -4011,14 +4012,15 @@ footer h4::after {
 
 .commentlist {
    margin: 1rem 0 1rem;
-   padding: 0;
+   padding: 1.5rem;
+   border: 2px solid #a4a4a4;
 }
 
 .commentlist > .comment {
    position: relative;
    list-style: none;
    margin: 0;
-   padding: 1.8rem 0;
+   padding: 0rem 0;
    padding-left: 14%;
 }
 
@@ -4051,7 +4053,7 @@ footer h4::after {
    line-height: 3rem;
    font-style: normal;
    display: block;
-   color: rgba(0, 0, 0, 0.7);
+   color: #a4a4a4;
 }
 
 .comment__meta time {
@@ -4063,7 +4065,8 @@ footer h4::after {
    margin-right: auto;
 }
 .comment-reply-link{
-   margin-top: 20px !important;
+   margin-top: 0px !important;
+   color: #f5f5f5;
 }
 comment__text p{
       display: block;

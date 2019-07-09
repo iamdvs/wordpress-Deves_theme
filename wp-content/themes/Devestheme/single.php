@@ -16,23 +16,31 @@
         <div class="s-content__header col-full">
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            <h1 class="s-content__header-title">
+            <h2 class="s-content__header-title">
                 <?php the_title(); ?>
-            </h1>
+            </h2>
             <ul class="s-content__header-meta">
                 <li class="date"> <?php the_time('j F Y'); ?></li>
                 <li class="cat">
                     دسته
-                    <a href="#0"> <?php the_category(','); ?> </a>
+                   
+                  
 
                 </li>
+
+                <a href="#0" class=""> <?php the_category(','); ?> </a>
+&nbsp;
+                <?php setPostViews(get_the_ID()); ?>
+                   <?php echo getPostViews(get_the_ID(),'sfaaf'); ?>
+
             </ul>
         </div> <!-- end s-content__header -->
 
         <div class="s-content__media col-full">
             <div class="s-content__post-thumb">
-            <a href="#0" class="">            <?php echo get_avatar( get_the_author_meta('user_email'),'50',''); ?>
- <?php the_author(); ?></a>
+           
+
+
 
 
             </div>
@@ -50,7 +58,7 @@
 
                 <span class="s-content__tag-list">
 
-                <?php the_tags(' '); ?>
+                <?php the_tags(''); ?>
             
                 </span>
             </p> <!-- end s-content__tags -->
@@ -76,7 +84,6 @@
 
                     <ul class="s-content__author-social">
                 
-                       <li><a href="https://www.instagram.com/iam_deves">Instagram</a></li>
                     </ul>
                 </div>
             </div>
