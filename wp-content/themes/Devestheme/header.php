@@ -94,34 +94,6 @@
 
                     </ul>
 
-                                    <!-- <li class="current"><a href="index.html" title="">خانه</a></li>
-                        <li class="has-children">
-                            <a href="#0" title="">دسته ها</a>
-                            <ul class="sub-menu">
-                            <li><a href="category.html">چرخه زندگی</a></li>
-                            <li><a href="category.html">زندگی</a></li>
-                            <li><a href="category.html">فامیل</a></li>
-                            <li><a href="category.html">مدیریت</a></li>
-                            <li><a href="category.html">مسافرت</a></li>
-                            <li><a href="category.html">کار</a></li>
-                            </ul>
-                        </li>
-                        <li class="has-children">
-                            <a href="#0" title="">وبلاگ</a>
-                            <ul class="sub-menu">
-                            <li><a href="single-video.html">پست ویدیو </a></li>
-                            <li><a href="single-audio.html">پست صدا </a></li>
-                            <li><a href="single-gallery.html">پست عکس ها </a></li>
-                            <li><a href="single-standard.html">پست استاندارد</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="style-guide.html" title="">استایل ها</a></li>
-                        <li><a href="about.html" title="">درباره</a></li>
-                        <li><a href="contact.html" title="">تماس با ما</a></li>
-
-                    <a href="#0" title="Close Menu" class="header__overlay-close close-mobile-menu">بستن</a>
-
-                </nav> <!-- end header__nav-wrap -->
 
             </div> <!-- header-content -->
         </header> <!-- header -->

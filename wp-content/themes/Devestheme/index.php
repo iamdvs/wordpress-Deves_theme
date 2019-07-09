@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-       
 
     </section> <!-- end s-pageheader -->
 
@@ -14,13 +13,6 @@
                 <div class="grid-sizer"></div>
 
                 <?php 
-// the query to set the posts per page to 3
-$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-$args = array('posts_per_page' => 3, 'paged' => $paged );
-query_posts($args); ?>
-
-                <?php 
-
                     // the query
                         $the_query = new WP_Query( array('post_type' => 'post' ) ); ?>
                     <?php if ( $the_query->have_posts() ) : ?>
@@ -81,7 +73,6 @@ query_posts($args); ?>
                 <nav class="pgn">
                     <ul>
                         <li><a class="pgn__prev" href="#0"></a></li>
-
                         <li><a class="pgn__num" href="#0">۱</a></li>
                         <li><span class="pgn__num current">۲</span></li>
                         <li><a class="pgn__num" href="#0">۳</a></li>
