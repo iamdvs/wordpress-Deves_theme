@@ -69,23 +69,15 @@
             </div> <!-- end masonry -->
         </div> <!-- end masonry-wrap -->
 
-        <div class="row">
-            <div class="col-full">
-                <nav class="pgn">
-                    <ul>
-                        <li><a class="pgn__prev" href="#0"></a></li>
-                        <li><a class="pgn__num" href="#0">۱</a></li>
-                        <li><span class="pgn__num current">۲</span></li>
-                        <li><a class="pgn__num" href="#0">۳</a></li>
-                        <li><a class="pgn__num" href="#0">۴</a></li>
-                        <li><a class="pgn__num" href="#0">۵</a></li>
-                        <li><span class="pgn__num dots">…</span></li>
-                        <li><a class="pgn__num" href="#0">۸</a></li>
-                        <li><a class="pgn__next" href="#0"></a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+  <nav data-pagination>
+  <a href=# disabled><i class=ion-chevron-left></i></a>
+  <ul>
+  <?php the_posts_pagination( array( 'mid_size' => 5 ,'screen_reader_text' => __( '&nbsp;' )) ); ?>
+
+  </ul>
+  <a href=#2><i class=ion-chevron-right></i></a>
+</nav>
+  
 
     </section> <!-- s-content -->
     <?php else : ?>
