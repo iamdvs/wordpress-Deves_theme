@@ -2884,7 +2884,7 @@ html.no-csstransitions .featured {
 .s-content {
    background-color:#424242 !important;
    padding-top: 25rem;
-   padding-bottom: 2rem;
+   padding-bottom: 3rem;
 
 }
 
@@ -2951,7 +2951,8 @@ html.no-csstransitions .featured {
    }
 
 }
-
+.mb{
+   margin-bottom: 500px;}
 /* -------------------------------------------------------------------
  * ## masonry layout
  * ------------------------------------------------------------------- */
