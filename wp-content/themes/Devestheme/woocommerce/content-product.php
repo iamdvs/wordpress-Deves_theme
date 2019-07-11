@@ -24,44 +24,43 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-<li <?php wc_product_class( '', $product ); ?>>
-	<?php
-	/**
-	 * Hook: woocommerce_before_shop_loop_item.
-	 *
-	 * @hooked woocommerce_template_loop_product_link_open - 10
-	 */
-	do_action( 'woocommerce_before_shop_loop_item' );
+<article class="masonry__brick entry format-standard" data-aos="fade-up">
 
-	/**
-	 * Hook: woocommerce_before_shop_loop_item_title.
-	 *
-	 * @hooked woocommerce_show_product_loop_sale_flash - 10
-	 * @hooked woocommerce_template_loop_product_thumbnail - 10
-	 */
-	do_action( 'woocommerce_before_shop_loop_item_title' );
+<div class="entry__thumb">
+	<a href="<?php the_permalink(); ?>" class="entry__thumb-link">
+	<?php the_post_thumbnail('articlethumb'); ?>
+	</a>
+</div>
 
-	/**
-	 * Hook: woocommerce_shop_loop_item_title.
-	 *
-	 * @hooked woocommerce_template_loop_product_title - 10
-	 */
-	do_action( 'woocommerce_shop_loop_item_title' );
+<div class="entry__text">
+	<div class="entry__header">
+		
+		<div class="entry__date">
+			<a href="single-standard.html">مهر ۱۰, ۱۳۹۴</a>
+		</div>
+		<h1 class="entry__title"><a href="<?php the_permalink(); ?>"> 
+		<?php the_title(); ?>
+.</a></h1>
+		
+	</div>
+	<div class="entry__excerpt">
+		<p>
 
-	/**
-	 * Hook: woocommerce_after_shop_loop_item_title.
-	 *
-	 * @hooked woocommerce_template_loop_rating - 5
-	 * @hooked woocommerce_template_loop_price - 10
-	 */
-	do_action( 'woocommerce_after_shop_loop_item_title' );
+			<?php echo $product->get_price_html(); ?>
+		</p>
+	</div>
+	<div class="entry__meta">
+		<span class="entry__meta-links">
+			<a href="#">زندگی</a> 
+			<a href="#">چرخه زندگی</a>
 
-	/**
-	 * Hook: woocommerce_after_shop_loop_item.
-	 *
-	 * @hooked woocommerce_template_loop_product_link_close - 5
-	 * @hooked woocommerce_template_loop_add_to_cart - 10
-	 */
-	do_action( 'woocommerce_after_shop_loop_item' );
-	?>
-</li>
+			<button class="btn">
+			<?php echo $product->add_to_cart_url(); ?>
+
+			</button>
+		</span>
+	</div>
+</div>
+
+</article> <!-- end article -->
+

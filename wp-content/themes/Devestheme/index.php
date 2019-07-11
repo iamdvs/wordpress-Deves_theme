@@ -1,9 +1,5 @@
 <?php get_header(); ?>
 
-    </section> <!-- end s-pageheader -->
-
-
-    </article> <!-- end article -->
 
 
 
