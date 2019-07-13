@@ -1,13 +1,16 @@
 
 
 
-<section class="s-content">
+
 <?php
 
 
 defined( 'ABSPATH' ) || exit;
 
-get_header( 'shop' );
+get_header( 'shop' ); ?>
+<section class="s-content">
+
+<?php
 /**
  * Hook: woocommerce_before_main_content.
  *
@@ -118,18 +121,7 @@ do_action( 'woocommerce_after_main_content' );
 
 </div>
 
-<?php
 
-
-/**
- * Hook: woocommerce_sidebar.
- *
- * @hooked woocommerce_get_sidebar - 10
- */
-do_action( 'woocommerce_sidebar' );
-
-
-?>
 </div>
 </section>
 

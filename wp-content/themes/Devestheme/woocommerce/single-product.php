@@ -21,6 +21,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' ); ?>
 
+<section class="s-content">
+<div class="row masonry-wrap">
+
+<div class="masonry">
+
+	<div class="grid-sizer"></div>
 	<?php
 		/**
 		 * woocommerce_before_main_content hook.
@@ -30,6 +36,8 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_before_main_content' );
 	?>
+
+
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
@@ -46,15 +54,9 @@ get_header( 'shop' ); ?>
 		do_action( 'woocommerce_after_main_content' );
 	?>
 
-	<?php
-		/**
-		 * woocommerce_sidebar hook.
-		 *
-		 * @hooked woocommerce_get_sidebar - 10
-		 */
-		do_action( 'woocommerce_sidebar' );
-	?>
+</div>
 
-<?php get_footer( 'shop' );
+</div>
 
-/* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */
+<?php get_footer( 'shop' ); ?>
+
